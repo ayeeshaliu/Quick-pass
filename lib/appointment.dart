@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:quick_pass/textStyle.dart';
 import 'package:quick_pass/card.dart';
+import 'package:quick_pass/util/helpers.dart';
 
 class Appointment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: colorFromHex(hex: "FFFCFC"),
       body: ListView(
         children: [
           SizedBox(

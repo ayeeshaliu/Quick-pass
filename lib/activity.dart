@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:quick_pass/util/helpers.dart';
 
 class Activity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: colorFromHex(hex: "FFFCFC"),
       body: Column(
         children: [
           SizedBox(
@@ -25,7 +27,7 @@ class Activity extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
-                  border: Border.all(color: Colors.grey.shade600),
+                  border: Border.all(color: colorFromHex(hex: "6B4C4A")),
                 ),
                 child: Image.asset("images/face.png"),
               ),
@@ -43,7 +45,7 @@ class Activity extends StatelessWidget {
           
         ],
       ),
-      /*bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
@@ -51,6 +53,7 @@ class Activity extends StatelessWidget {
 
           ),
           BottomNavigationBarItem(
+
             icon: Icon(Icons.calendar_today_outlined),
            label: "",
           ),
@@ -59,10 +62,11 @@ class Activity extends StatelessWidget {
 
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: colorFromHex(hex: "FF3B2D"),
         onPressed: (){},
         child: Icon(Icons.add),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,*/
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

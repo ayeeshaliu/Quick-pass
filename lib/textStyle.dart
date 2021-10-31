@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_pass/util/helpers.dart';
 
 class MyText extends StatelessWidget {
   final String title;
@@ -19,7 +20,7 @@ class MyText extends StatelessWidget {
         fontWeight: fontWeight ?? FontWeight.w700,
         fontStyle: fontStyle ?? FontStyle.normal,
         letterSpacing: letterSpacing?? 0.15,
-        color: color?? Color(0x6B4C4A),
+        color: color?? colorFromHex(hex: "6B4C4A"),
 
       ) ,
 
